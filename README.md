@@ -4,6 +4,7 @@
 1. [Description](#Description)
 2. [PrimitivePaintApplication](#PrimitivePaintApplication)
 3. [CoinCountingApplication](#CoinCountingApplication)
+4. [BoxDimensionCalculator](#BoxDimensionCalculator)
 
 ## Description
 This repository is a collection of mini computer vision projects completed over the summer of 2023. These were developed on a 64-bit Ubuntu machine.
@@ -13,7 +14,7 @@ This repository is a collection of mini computer vision projects completed over 
 $ git clone https://github.com/faithg3/ComputerVisionProjects.git
 ~~~
 ## PrimitivePaintApplication
-This application is a very primitive version of Paint installed on Windows machines.
+This program is a very primitive version of Paint installed on Windows machines.
 
 ### Features
 Left-click to toggle through features. Right-click to use the selected tool.
@@ -27,10 +28,10 @@ Left-click to toggle through features. Right-click to use the selected tool.
 !!!!!!!!!!!!!!!!!!!!!
 
 ### Compile and Execute
-* Navigate to the folder 'PrimitivePaintApplication' in the termial
+* Navigate to the folder 'PrimitivePaintApplication' in the terminal
 * Compile
 ~~~
-cmake
+cmake .
 ~~~
 ~~~
 make
@@ -41,29 +42,55 @@ make
 ~~~
 
 ## CoinCountingApplication
-This application counts the amount of money in coins from images. The total is output in the terminal and the coin types are outlined in their respective colors. Pennies are red, nickles are yellow, dimes are blue, and quarters are green. Pictures must be taken from the same distance and angle to work properly. You can adjust the values on lines 79, 85, 91, and 97 to fit your image set.
+This program counts the amount of money in coins from images. The total is output in the terminal and the coin types are outlined in their respective colors. Pennies are red, nickles are yellow, dimes are blue, and quarters are green. Pictures must be taken from the same distance and angle to work properly. You can adjust the values on lines 79, 85, 91, and 97 to fit your image set.
 
 ### Features
-* Edge detection is run on the input image.
-* Contours are found using the edges.
-* A minimum bounding rectangle is fitted to each contour.
-* An ellipse is created within said rectangle.
-* The width of each coin is calculated from the ellipses.
-* The count is output in the terminal and the identified coins are output in an image.
+* Outlines coin types with their respective colors.
+* Counts the number of each type of coin in the image.
+* Calculates the total money in the image.
 
 ### Demo
 !!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ### Compile and Execute
-* Navigate to the folder 'CoinCountingApplication' in the termial
+* Navigate to the folder 'CoinCountingApplication' in the terminal
 * Compile
 ~~~
-cmake
+cmake .
 ~~~
 ~~~
 make
 ~~~
-* Run the program with the desired image. 51Cents.jpg, 67Cents.jpg, 73Cents.jpg, 76Cents.jpg, and 78Cents.jpg are given in the folder to run the program with.
+* Run the program with the desired image. Images 51Cents.jpg, 67Cents.jpg, 73Cents.jpg, 76Cents.jpg, and 78Cents.jpg are given in the folder to run the program with.
 ~~~
 ./program2 (image name here)
+~~~
+
+## BoxDimensionCalculator
+This program identifies boxes on a table and calculates their dimensions from .ply files taken from above at a ~90 degree angle to the table top.
+
+### Features
+* Identifies the table plane and colors it blue.
+* Identifies the tops of boxes and colors them red or blue.
+* Calculates the dimensions of each box.
+* Navigating the point cloud
+  * Middle Mouse Scroll OR Right Mouse Hold and Drag - Zoom in or out.
+  * Middle Mouse Scroll Hold and Drag - Change angle.
+  * Left Mouse Hold and Drag - Rotate around the center.
+
+### Demo
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+## Comple and Execute
+* Navigate to the folder 'BoxDimensionCalculator' in the terminal
+* Compile
+~~~
+cmake .
+~~~
+~~~
+make
+~~~
+* Run the program with the desired image. Images 51Cents.jpg, 67Cents.jpg, 73Cents.jpg, 76Cents.jpg, and 78Cents.jpg are given in the folder to run the program with.
+~~~
+./program4 (image name here)
 ~~~
