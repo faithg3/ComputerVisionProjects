@@ -5,6 +5,7 @@
 2. [PrimitivePaintApplication](#PrimitivePaintApplication)
 3. [CoinCountingApplication](#CoinCountingApplication)
 4. [BoxDimensionCalculator](#BoxDimensionCalculator)
+5. [VideoGameGemIdentifier](#VideoGameGemIdentifier)
 
 ## Description
 This repository is a collection of mini computer vision projects completed over the summer of 2023. These were developed on a 64-bit Ubuntu machine.
