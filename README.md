@@ -90,7 +90,7 @@ cmake .
 ~~~
 make
 ~~~
-* Run the program with the desired image. Images 51Cents.jpg, 67Cents.jpg, 73Cents.jpg, 76Cents.jpg, and 78Cents.jpg are given in the folder to run the program with.
+* Run the program with the desired .ply file. Files test1.ply, test2.ply, test3.ply, test4.ply, and test5.ply are given in the folder to run the program with.
 ~~~
-./program4 (image name here)
+./program4 (.ply file here)
 ~~~
