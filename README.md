@@ -9,10 +9,6 @@
 ## Description
 This repository is a collection of mini computer vision projects completed over the summer of 2023. These were developed on a 64-bit Ubuntu machine.
 
-## Clone Repository
-~~~
-$ git clone https://github.com/faithg3/ComputerVisionProjects.git
-~~~
 ## PrimitivePaintApplication
 This program is a very primitive version of Paint installed on Windows machines.
 
@@ -25,21 +21,7 @@ Left-click to toggle through features. Right-click to use the selected tool.
 * Reset Tool: Double-click to reset the image back to default.
 
 ### Demo 
-!!!!!!!!!!!!!!!!!!!!!
-
-### Compile and Execute
-* Navigate to the folder 'PrimitivePaintApplication' in the terminal
-* Compile
-~~~
-cmake .
-~~~
-~~~
-make
-~~~
-* Run the program with the test.png
-~~~
-./program1 test.png
-~~~
+<img src="Gifs/paintgif.gif" width=800>
 
 ## CoinCountingApplication
 This program counts the amount of money in coins from images. The total is output in the terminal and the coin types are outlined in their respective colors. Pennies are red, nickles are yellow, dimes are blue, and quarters are green. Pictures must be taken from the same distance and angle to work properly. You can adjust the values on lines 79, 85, 91, and 97 to fit your image set.
@@ -51,20 +33,6 @@ This program counts the amount of money in coins from images. The total is outpu
 
 ### Demo
 !!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-### Compile and Execute
-* Navigate to the folder 'CoinCountingApplication' in the terminal
-* Compile
-~~~
-cmake .
-~~~
-~~~
-make
-~~~
-* Run the program with the desired image. Images 51Cents.jpg, 67Cents.jpg, 73Cents.jpg, 76Cents.jpg, and 78Cents.jpg are given in the folder to run the program with.
-~~~
-./program2 (image name here)
-~~~
 
 ## BoxDimensionCalculator
 This program identifies boxes on a table and calculates their dimensions from .ply files taken from above at a ~90 degree angle to the table top.
@@ -81,16 +49,12 @@ This program identifies boxes on a table and calculates their dimensions from .p
 ### Demo
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-## Comple and Execute
-* Navigate to the folder 'BoxDimensionCalculator' in the terminal
-* Compile
-~~~
-cmake .
-~~~
-~~~
-make
-~~~
-* Run the program with the desired .ply file. Files test1.ply, test2.ply, test3.ply, test4.ply, and test5.ply are given in the folder to run the program with.
-~~~
-./program4 (.ply file here)
-~~~
+## VideoGameGemIdentifier
+This program uses template matching to identify the gems in a video taken from a video game. It uses an image of a gem as a template and identifies each gem in the video.
+
+### Features
+* Identifies gems and tracks gems on screen.
+* Identifies the color of each gem and outlines them with the respective color.
+
+### Demo
+!!!!!!!!!!!!!!!!!
