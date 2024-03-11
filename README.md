@@ -57,4 +57,4 @@ This program uses template matching to identify the gems in a video taken from a
 * Identifies the color of each gem and outlines them with the respective color.
 
 ### Demo
-<img src="Gifs/videogame.gif" width=800>
+<img src="Gifs/videogamegif.gif" width=800>
