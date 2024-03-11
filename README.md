@@ -32,7 +32,7 @@ This program counts the amount of money in coins from images. The total is outpu
 * Calculates the total money in the image.
 
 ### Demo
-!!!!!!!!!!!!!!!!!!!!!!!!!!!
+<img src="Gifs/coingif.gif" width=800>
 
 ## BoxDimensionCalculator
 This program identifies boxes on a table and calculates their dimensions from .ply files taken from above at a ~90 degree angle to the table top.
@@ -47,7 +47,7 @@ This program identifies boxes on a table and calculates their dimensions from .p
   * Left Mouse Hold and Drag - Rotate around the center.
 
 ### Demo
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+<img src="Gifs/boxgif.gif" width=800>
 
 ## VideoGameGemIdentifier
 This program uses template matching to identify the gems in a video taken from a video game. It uses an image of a gem as a template and identifies each gem in the video.
@@ -57,4 +57,4 @@ This program uses template matching to identify the gems in a video taken from a
 * Identifies the color of each gem and outlines them with the respective color.
 
 ### Demo
-!!!!!!!!!!!!!!!!!
+<img src="Gifs/videogame.gif" width=800>
